@@ -1,0 +1,53 @@
+@import './global.scss';
+search-results {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
+    height: 100%;
+}
+
+search-results result-item {
+    cursor: pointer;
+    display: block;
+    flex: 1 100%;
+    margin: .3em;
+    padding: .3em;
+    box-shadow: 0 0 5px $black;
+    border-radius: .2em;
+    background-color: $lightGray;
+    transition: box-shadow .3s linear, background-color .3s linear;
+}
+
+search-results result-item:hover {
+    box-shadow: 0 0 5px $lightBlue;
+    background-color: $white;
+}
+
+search-results result-item h2 {
+    font-size: 120%;
+    margin: 0;
+    font-weight: 600;
+}
+
+search-results result-item .link {
+    display: none;
+}
+
+@media (min-width: $desktopWidth) {
+    search-results {
+        flex: 2;
+    }
+    search-results result-item {
+        flex: 1 40%;
+    }
+}
+
+@media (min-width: $hdWidth) {
+    search-results {
+        flex: 3;
+    }
+    search-results result-item {
+        flex: 1 30%;
+    }
+}

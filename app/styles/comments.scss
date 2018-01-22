@@ -1,0 +1,60 @@
+@import './global.scss';
+comments-section {
+    display: block;
+    flex: 1;
+    overflow: auto;
+    border-top: solid 3px $darkBlue;
+    padding: 0 .5em;
+}
+
+comments-section result-item {
+    display: block;
+}
+
+comments-section result-item .name {
+    font-size: 120%;
+    font-weight: 700;
+    margin-bottom: .3em;
+}
+
+comments-section result-item .link a {
+    color: $lightBlue;
+}
+
+comments-section h3 {
+    font-size: 115%;
+    font-weight: 600;
+    margin-bottom: .3em;
+}
+
+comments-section comment {
+    border-top: solid 1px $darkGray;
+    display: block;
+    padding-bottom: .5em;
+}
+
+comments-section comment:first-child {
+    border-top: none;
+}
+
+comments-section comment .date {
+    font-size: 80%;
+}
+
+comments-section comment .username {
+    font-size: 110%;
+    font-weight: 600;
+    margin: 0 0 .3em;
+}
+
+comments-section comment .text {
+    font-size: 90%;
+    padding-left: 1em;
+}
+
+@media (min-width: $tabletWidth) {
+    comments-section {
+        border-top: none;
+        border-left: solid 3px $darkGray;
+    }
+}

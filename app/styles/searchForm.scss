@@ -1,0 +1,26 @@
+search-form {
+    display: block;
+}
+
+search-form form {
+    line-height: 2;
+    padding: .5em;
+}
+
+search-form form label,
+search-form form input,
+search-form form button {
+    display: inline-block;
+    box-sizing: border-box;
+    height: 2em;
+    line-height: 1.5em;
+    margin-right: .3em;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+    vertical-align: middle;
+}
+
+search-form form button {
+    cursor: pointer;
+    font-weight: 600;
+}

@@ -1,0 +1,23 @@
+{
+    "rules": {
+        "no-console": "error",
+        "no-debugger": "error",
+        "no-empty": "error",
+        "eqeqeq": "error",
+        "no-empty-pattern": "error",
+        "no-delete-var": "warn",
+        "no-undef": "warn",
+        "no-unreachable": "warn",
+        "no-extra-semi": "warn",
+        "no-dupe-keys": "warn"
+    },
+    "globals": {
+        "module": true,
+        "require": true,
+        "window": true,
+        "Promise": true
+    },
+    "parserOptions": {
+        "sourceType": "module"
+    }
+}

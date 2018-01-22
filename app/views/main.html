@@ -1,0 +1,9 @@
+<h1>GitHub Search</h1>
+<search-form></search-form>
+<section class="results">
+    <search-results results="results" ng-if="results"></search-results>
+    <comments-section repository="currentRepository" comments="comments" ng-if="comments"></comments-section>
+</section>
+<section class="error" ng-class="errorVisible ? 'visible' : ''">
+    <div class="error-message" ng-bind="error"></div>
+</section>
