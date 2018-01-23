@@ -1,4 +1,7 @@
-<h2 class="name" ng-bind="$ctrl.repository.name"></h2>
+<div class="user">
+    <h2 class="name" ng-bind="$ctrl.repository.name"></h2>
+    <div class="avatar"><img src="{{$ctrl.repository.avatar}}" alt="User image"/></div>
+</div>
 <div class="owner">by {{$ctrl.repository.owner}}</div>
 <div class="description" ng-bind="$ctrl.repository.description"></div>
 <div class="link">

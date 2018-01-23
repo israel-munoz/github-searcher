@@ -24,10 +24,22 @@ search-results result-item:hover {
     background-color: $white;
 }
 
-search-results result-item h2 {
+result-item .user {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+result-item .name {
     font-size: 120%;
     margin: 0;
     font-weight: 600;
+}
+
+result-item .avatar img {
+    width: 3em;
+    margin-right: .5em;
 }
 
 search-results result-item .link {

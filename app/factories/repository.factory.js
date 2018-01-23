@@ -1,4 +1,4 @@
-function Repository($log) {
+function Repository() {
     function create(src) {
         let rep = {};
         src = src || {};
@@ -9,12 +9,9 @@ function Repository($log) {
         rep.description = src.description || '';
         rep.url = src.html_url || '';
         rep.commentsUrl = src.comments_url || '';
+        rep.avatar = (src.owner || {}).avatar_url || '';
 
         return rep;
-    }
-
-    function DoSomething() {
-        $log.info('aaa');
     }
 
     return {
