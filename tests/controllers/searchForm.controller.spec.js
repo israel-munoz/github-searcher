@@ -20,7 +20,7 @@ test('should update parent results', function(t) {
   })
 });
 
-test('should update parent results', function(t) {
+test('should display the errors when something fail', function(t) {
   const scope = { $parent: parentMock() };
   const serviceMock = {
     search: () => Promise.reject()
