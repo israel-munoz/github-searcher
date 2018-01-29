@@ -11,7 +11,8 @@
   "license": "ISC",
   "private": true,
   "scripts": {
-    "start": "gulp"
+    "start": "gulp",
+    "test": "node ./tests/suite"
   },
   "devDependencies": {
     "angular": "^1.6.8",
@@ -20,6 +21,7 @@
     "babel-plugin-es6-promise": "^1.1.1",
     "babel-preset-es2015": "^6.24.1",
     "babelify": "^8.0.0",
+    "blue-tape": "^1.0.0",
     "browserify": "^15.2.0",
     "connect-livereload": "^0.6.0",
     "es6-promise": "^4.2.2",
@@ -34,6 +36,7 @@
     "gulp-livereload": "^3.8.1",
     "gulp-sass": "^3.1.0",
     "gulp-uglify": "^3.0.0",
+    "sinon": "^4.2.2",
     "tiny-lr": "^1.0.5",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0"
