@@ -3,7 +3,7 @@ function SearchFormController($scope, RepositoryService) {
 
     this.searchClick = function () {
         let parent = $scope.$parent;
-        RepositoryService.search(ctrl.searchField)
+        return RepositoryService.search(ctrl.searchField)
             .then(function (data) {
                 parent.updateResults(data);
             }).catch(function (err) {
