@@ -14,6 +14,16 @@ var CommentController = require('./controllers/commentsSection.controller');
 
 var MainController = require('./controllers/main.controller');
 
+var styles = require('./styles/main.scss');
+var views = [
+    require('./views/comment.html'),
+    require('./views/commentsSection.html'),
+    require('./views/main.html'),
+    require('./views/resultItem.html'),
+    require('./views/searchForm.html'),
+    require('./views/searchResults.html')
+]
+
 app.config(['$routeProvider', function ($routeProvider) {
     $routeProvider
         .when('/', {
