@@ -9,7 +9,6 @@ module.exports = {
     path: path.resolve(__dirname, 'dist')
   },
   devServer: {
-    contentBase: path.join(__dirname, 'dist'),
     compress: true,
     port: 1000
   },
@@ -44,7 +43,7 @@ module.exports = {
       template: 'app/index.html'
     }),
     new MiniCssExtractPlugin({
-      file: '[name].css',
+      filename: '[name].css',
       chunkFilename: '[id].css'
     })
   ]
